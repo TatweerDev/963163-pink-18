@@ -6,48 +6,52 @@
   </head>
   <body>
     <header class="header-menu">
-  		<section class="header-menu__mainBackground">
+  		<section class="header-menu__main-background">
   		    <div class="header-menu__wrapper">
-  		        <a class="header-menu_logo">
+  		        <a class="header-menu site_logo">
   		        	<h3>Pink</h3>
   		        </a> 
-  		           	<button class="header-menu-navigation__toggle" type="button">menu opener</button>
+  		           	<button class="navigation__toggle" type="button">Menu opener</button>
   		    </div>
   		    <nav class="header-menu-navigation">
-  			    <ul class="navigation__list">
-  			    	<li class="navigation__list navigation__item">
-  			    		<a href="">главная</a>
-  			    	</li>
-  			    	<li class="navigation__list navigation__item">
-  			    		<a href="photo.html">фотографии</a>
-  			    	</li>
-  			    	<li class="navigationv__list navigation__item">
-  			    		<a href="conest.html">конкурс</a>
-  			    	</li>
-  			    	<li class="navigation__list navigation__item">
-  			    		<a href="https://www.htmlacademy.ru">html academy</a>
-  			    	</li>  				
-  			    </ul>
-  		    </nav>
-  		    <b>Взгляните на жизнь<br>иначе</b>	
+              <ul class="header-menu-navigation navigation__list">
+                <li class="navigation__list navigation-list__item">
+                  <a href="index.html">Главная</a>
+                </li>
+                <li class="navigation__list navigation-list__item">
+                  <a href="photo.html">Фотографии</a>
+                </li>
+                <li class="navigation__list navigation-list__item">
+                  <a href="contest.html">Конкурс</a>
+                </li>
+                <li class="navigation__list navigation-list__item">
+                  <a href="https://www.htmlacademy.ru">HTML academy</a>
+                </li>         
+              </ul>
+          </nav>         
+  		    <b>Взгляните на жизнь иначе</b>	
   		</section>
 
   		<section class="header-menu-apps">
-        <h3 class="visually-hidden">скачать приложение</h3>
-  			<a href="#" class="button">скачать приложение</a> 
+        <h3 class="visually-hidden">Скачать приложение</h3>
+  			<a href="#" class="button">Скачать приложение</a> 
   			<div class="apps-icon_container">
   				<a href="#" class="apps-icon_Apple"><img src="https://via.placeholder.com/50x50" alt=""></a>
   				<a href="#" class="apps-icon_Android"><img src="https://via.placeholder.com/50x50" alt=""></a>
   				<a href="#" class="apps-icon_Microsoft"><img src="https://via.placeholder.com/50x50" alt=""></a> 	
   			</div>
-  			<p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>		
+  			<p class="header-menu-apps apps-info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>		
   		</section>
   	</header>
 
-  	<main>
+  	<main class="page-main">
   		<section class="offer">
-  			<h3>Устали от серости мегаполиса?<br>
-          Нам есть, что вам  предложить!</h3> 			
+        <h2 class="visually-hidden">Предолжения</h2>
+  		  <p>
+          <span class="offer offer_slogan1">Устали от серости мегаполиса?</span>
+          <span class="offer offer_slogan2">Нам есть, что вам  предложить!</span>
+        </p>		
+          
   		</section>
   		<section class="info">
   			<ul class="info__list">
@@ -69,18 +73,19 @@
   		</section>
 
       <section class="review">
-        <ul class="review-list">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <ul class="review review-list">
           <li class="review-list__item">
             <h2>Николай Петров</h2>
             <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul> 
 
-        <p class="review-list__toggles">
-          <button class="slider-toggle" type="button">1</button>
+        <div class="review-toggle__wrapper slider-toggles">
+          <button class="slider-toggle slider-toggle--active" type="button">1</button>
           <button class="slider-toggle" type="button">2</button>
           <button class="slider-toggle" type="button">3</button>         
-        </p>       
+        </div>       
       </section>
   	</main> 
 
