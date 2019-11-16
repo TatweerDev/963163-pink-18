@@ -15,16 +15,16 @@
   		    </div>
   		    <nav class="navigation">
               <ul class="navigation__list">
-                <li class=" navigation__list__item">
+                <li class=" navigation__list-item">
                   <a href="index.html">Главная</a>
                 </li>
-                <li class="navigation__list__item">
+                <li class="navigation__list-item">
                   <a href="photo.html">Фотографии</a>
                 </li>
-                <li class="navigation__list__item">
+                <li class="navigation__list-item">
                   <a href="contest.html">Конкурс</a>
                 </li>
-                <li class="navigation__list__item">
+                <li class="navigation__list-item">
                   <a href="https://www.htmlacademy.ru">HTML academy</a>
                 </li>         
               </ul>
@@ -36,9 +36,9 @@
         <h2 class="visually-hidden">Скачать приложение</h2>
   			<a href="#" class="header-apps__button">Скачать приложение</a> 
   			<div class="header__apps-icon">
-  				<a href="#" class="header__apps-icon__item header__apps-icon__item--Apple"><img src="https://via.placeholder.com/50x50" alt=""></a>
-  				<a href="#" class="header__apps-icon__item header__apps-icon__item--Android"><img src="https://via.placeholder.com/50x50" alt=""></a>
-  				<a href="#" class="header__apps-icon__item header__apps-icon__item--Microsoft"><img src="https://via.placeholder.com/50x50" alt=""></a> 	
+  				<a href="#" class="header__apps-icon-item header__apps-icon-item--apple"><img src="https://via.placeholder.com/50x50" alt=""></a>
+  				<a href="#" class="header__apps-icon-item header__apps-icon-item--android"><img src="https://via.placeholder.com/50x50" alt=""></a>
+  				<a href="#" class="header__apps-icon-item header__apps-icon-item--microsoft"><img src="https://via.placeholder.com/50x50" alt=""></a> 	
   			</div>
   			<p class="header__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>		
   		</section>
@@ -48,24 +48,24 @@
   		<section class="offer">
         <h2 class="visually-hidden">Предолжения</h2>
   		  <p>
-          <span class="offer__slogan__1">Устали от серости мегаполиса?</span>
-          <span class="offer__slogan__2">Нам есть, что вам  предложить!</span>
+          <span class="offer__slogan">Устали от серости мегаполиса?</span>
+          <span class="offer__slogan">Нам есть, что вам  предложить!</span>
         </p>		
           
   		</section>
   		<section class="info">
   			<ul class="info__list">
-  				<li class="info__list__item">
+  				<li class="info__list-item">
   					<h3>Поднимает настроение</h3>
-  					<p class="info__list__comment">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+  					<p class="info__list-comment">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
   				</li>
 
-  				<li class="info__list__item">
+  				<li class="info__list-item">
   					<h3>Меняет мир вокруг</h3>
-  					<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p></li>
-  				<li class="info__list__item">
+  					<p class="info__list-comment">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p></li>
+  				<li class="info__list-item">
   					<h3>Заводит новых друзей</h3>
-  					<p class="info__list__comment">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых</p>
+  					<p class="info__list-comment">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых</p>
   				</li>
         </ul>
   				<img class="info__photo" src="https://via.placeholder.com/150x250" alt="">
@@ -75,16 +75,24 @@
       <section class="review">
         <h2 class="visually-hidden">Отзывы</h2>
         <ul class="review__list">
-          <li class="review__list__item">
+          <li class="review__list-item">
             <h3>Николай Петров</h3>
-            <p class="review__list__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="review__list-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul> 
 
-        <div class="slider-toggle-wrapper">
-          <button class="slider-toggle slider-toggle--active" type="button">1</button>
-          <button class="slider-toggle" type="button">2</button>
-          <button class="slider-toggle" type="button">3</button>         
+        <div class="slider-toggles">
+          <ul class="slider-toggles__list">
+            <li class="slider-toggles__list-item">
+              <button class="slider-toggles__button slider-toggles__button--active" type="button">1</button>
+            </li>
+            <li class="slider-toggles__list-item">
+              <button class="slider-toggles__button" type="button">2</button>
+            </li>
+            <li class="slider-toggles__list-item">
+              <button class="slider-toggles__button" type="button">3</button>
+            </li> 
+          </ul>       
         </div>       
       </section>
   	</main> 
