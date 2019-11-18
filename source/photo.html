@@ -122,9 +122,25 @@
               </b>
             </div>
           </li>
-        </ul>
-        
+        </ul>        
       </section>
+      <section class="photos-upload">
+        <h3 class="photos-upload__title">Затмите всех! Выкладывайте все, что накопилось в телефоне!</h3>
+        <form action="#" name="form"  enctype="multipart/form-data" class="photos-upload-form">
+          <img class="photos-upload-form__image" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="">
+          <div class="photos-upload-form__toggles">
+            <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--size">1</button>
+            <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--color">2</button>
+            <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--opacity">3</button>
+          </div>     
+          <input type="range" name="form">
+          <div class="photos-upload-form__buttons-wrapper">
+              <input type="submit" name="submit" class="photos-upload-form__submit" value="Запостить">        
+              <input type="reset" name="submit" class="photos-upload-form__reset" value="отмена">
+          </div>
+        </form>               
+      </section>
+
     </main>
     <footer class="page-footer">
       <a href="index.html" class="site-logo"> <!--Картинку добавим позже в Css с помощью псевдоэлемента через :before -->
