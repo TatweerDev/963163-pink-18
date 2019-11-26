@@ -3,74 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link rel="stylesheet" href="css/style.css">    
   </head>
   <body>
     <header class="header">
-  		<section class="header__main-background">
-  		    <div class="header__wrapper">
-  		        <a class="site-logo">
-  		        	<h3>Pink</h3>
-  		        </a> 
-  		           	<button class="header__menu-toggle" type="button">Menu opener</button>
-  		    </div>
-  		    <nav class="navigation">
-              <ul class="navigation__list">
-                <li class=" navigation__list-item">
-                  <a href="index.html">Главная</a>
-                </li>
-                <li class="navigation__list-item">
-                  <a href="photo.html">Фотографии</a>
-                </li>
-                <li class="navigation__list-item">
-                  <a href="contest.html">Конкурс</a>
-                </li>
-                <li class="navigation__list-item">
-                  <a href="https://www.htmlacademy.ru">HTML academy</a>
-                </li>         
-              </ul>
-          </nav>
-  		    <b class="header__slogan">Взгляните на жизнь иначе</b>	
+      <section class="header__main-background">
+        <div class="header__wrapper">
+          <a class="site-logo">
+            <h3>Pink</h3>
+          </a> 
+  		    <button class="header__menu-toggle" type="button">Menu opener</button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="contest.html">Конкурс</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="https://www.htmlacademy.ru">HTML academy</a>
+            </li>    
+          </ul>
+        </nav>
+  		    <b class="header__slogan">Взгляните на жизнь иначе</b>
   		</section>
-
   		<section class="header-apps">
         <h2 class="visually-hidden">Скачать приложение</h2>
-  			<a href="#" class="header-apps__button">Скачать приложение</a> 
+  			<a href="#" class="header-apps__button">Скачать приложение</a>
   			<div class="header__apps-icon">
   				<a href="#" class="header__apps-icon-item header__apps-icon-item--apple"><img src="img/logo-apple.svg" alt=""></a>
   				<a href="#" class="header__apps-icon-item header__apps-icon-item--android"><img src="img/logo-android.svg" alt=""></a>
-  				<a href="#" class="header__apps-icon-item header__apps-icon-item--microsoft"><img src="img/logo-microsoft.svg" alt=""></a> 	
+  				<a href="#" class="header__apps-icon-item header__apps-icon-item--microsoft"><img src="img/logo-microsoft.svg" alt=""></a>
   			</div>
-  			<p class="header__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>		
+  			<p class="header__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
   		</section>
   	</header>
 
   	<main class="page-main">
   		<section class="offer">
         <h2 class="visually-hidden">Предолжения</h2>
-  		  <p>
-          <span class="offer__slogan">Устали от серости мегаполиса?</span>
-          <span class="offer__slogan">Нам есть, что вам  предложить!</span>
-        </p>		
-          
+  		  <p class="offer__slogan">Устали от серости мегаполиса?</p>
+        <p class="offer__slogan">Нам есть, что вам  предложить!</p>          
   		</section>
-  		<section class="info">
-  			<ul class="info__list">
-  				<li class="info__list-item">
+  		<section class="info">  			
+  				<div class="info__item">
   					<h3>Поднимает настроение</h3>
-  					<p class="info__list-comment">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-  				</li>
-
-  				<li class="info__list-item">
+  					<p class="info__comment">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+  				</div>
+  				<div class="info__item">
   					<h3>Меняет мир вокруг</h3>
-  					<p class="info__list-comment">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p></li>
-  				<li class="info__list-item">
+  					<p class="info__comment">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p></div>
+  				<div class="info__item">
   					<h3>Заводит новых друзей</h3>
-  					<p class="info__list-comment">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых</p>
-  				</li>
-        </ul>
-  				<img class="info__photo" src="https://via.placeholder.com/150x250" alt="">
+  					<p class="info__comment">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых</p>
+  				</div>        
   		</section>
-
       <section class="review">
         <h2 class="visually-hidden">Отзывы</h2>
         <ul class="review__list">
@@ -78,7 +70,7 @@
             <h3>Николай Петров</h3>
             <p class="review__list-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
-        </ul> 
+        </ul>
         
         <ul class="slider-toggles">
           <li class="slider-toggles__item">
@@ -89,8 +81,8 @@
           </li>
           <li class="slider-toggles__item">
             <button class="slider-toggles__button" type="button">3</button>
-          </li> 
-        </ul>              
+          </li>
+        </ul>
       </section>
 
       <section class="rates">
@@ -113,21 +105,21 @@
            </tr>
            <tr class="rates-table__row">
             <td class="rates-table__item">Розовый фильтр</td>
-            <td class="rates-table__item rates-table__item-positive">v</td> <!--Временно ставим в значения таблицы буквы v и x чтобы разобраться в значениях таблицы-->
+            <td class="rates-table__item rates-table__item-positive">v</td><!--Временно ставим в значения таблицы буквы v и x чтобы разобраться в значениях таблицы-->
             <td class="rates-table__item rates-table__item-positive">v</td>
-            <td class="rates-table__item rates-table__item-positive">v</td>             
+            <td class="rates-table__item rates-table__item-positive">v</td>       
            </tr>
            <tr class="rates-table__row">
             <td class="rates-table__item">Смайлики</td>
             <td class="rates-table__item rates-table__item-negative">x</td>
             <td class="rates-table__item rates-table__item-positive">v</td>
-            <td class="rates-table__item rates-table__item-positive">v</td>             
+            <td class="rates-table__item rates-table__item-positive">v</td>        
            </tr>
            <tr class="rates-table__row">
             <td class="rates-table__item">Комментарии</td>
             <td class="rates-table__item rates-table__item-negative">x</td>
             <td class="rates-table__item rates-table__item-negative">x</td>
-            <td class="rates-table__item rates-table__item-positive">v</td>             
+            <td class="rates-table__item rates-table__item-positive">v</td>        
            </tr>
         </table>
         <ul class="rates-toggles">
@@ -139,11 +131,10 @@
           </li>
           <li class="rates-toggles__item">
             <button class="rates-toggles__button" type="button">3</button>
-          </li> 
-        </ul>              
-      </section>    
-      
-  	</main> 
+          </li>
+        </ul>
+      </section>      
+  	</main>
     <footer class="page-footer">
       <section class="contact-us">
         <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
@@ -162,10 +153,9 @@
           </li>
         </ul>  
         <div class="contact-us-map">
-          <img class="map-js" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="">          
-        </div>    
+          <img class="map-js" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="">  
+        </div>
       </section>
     </footer>
-
   </body>
 </html>
