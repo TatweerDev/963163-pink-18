@@ -35,54 +35,76 @@
     </header>
     <main class="page-main container">
       <form class="form">
-        <section class="form__name">
-        <h3 class="form__name-section-title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h3>
-        <label class="form__name-item">Фамилия:
-          <input type="text" name="name" placeholder="Укажите фамилию *" required>
+        <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h3>
+        <section class="form-name">
+        <h3 class="visually-hidden">Заполните свое имя</h3>
+        <label class="form-name__label">
+          <span class="form-name__label-title">Фамилия:</span>
+          <input class="form-name__input" type="text" name="name" placeholder="Укажите фамилию *" required>
         </label>
-        <label class="form__name-item">Имя:
-          <input type="text" name="name" placeholder="Укажите ваше имя *" required>
+        <label class="form-name__label">
+          <span class="form-name__label-title">Имя:</span>
+          <input class="form-name__input" type="text" name="name" placeholder="Введите ваше имя *" required>
         </label>
-        <label class="form__name-item">Отчество:
-          <input type="text" name="name" placeholder="Ну и отчество тоже *" required>
+        <label class="form-name__label">
+          <span class="form-name__label-title">Отчество:</span>
+          <input class="form-name__input" type="text" name="name" placeholder="Ну и отчество тоже" required>
         </label>
         </section>
-        <section class="form__achievement">
-          <h3 class="form__achievement-title">Ваши безбашенные достижения в путешествии</h3>
-          <input type="checkbox" name="achievement" value="#" class="form__achievement-button" checked>Сделал селфи  с акулой
-          <input type="checkbox" name="achievement" value="#" class="form__achievement-button" checked>Обгорел на пляже
-          <input type="checkbox" name="achievement" value="#" class="form__achievement-button">Видел Чака Норриса
-          <input type="checkbox" name="achievement" value="#" class="form__achievement-button">Накупил сувениров
-          <input type="checkbox" name="achievement" value="#" class="form__achievement-button" checked>Удержал башню
-          <input type="checkbox" name="achievement" value="#" class="form__achievement-button">Разгромил отель
+        <section class="form-achievement">
+          <h3 class="form-achievement__title">Ваши безбашенные достижения в путешествии</h3>
+          <div class="form-achievement__wrapper">
+            <label class="form-achievement__label">
+              <input type="checkbox" name="achievement" value="#" class="form-achievement__checkbox" checked>Сделал селфи  с акулой
+            </label>
+            <label class="form-achievement__label">
+              <input type="checkbox" name="achievement" value="#" class="form-achievement__checkbox" checked>Обгорел на пляже
+            </label>
+            <label class="form-achievement__label">
+              <input type="checkbox" name="achievement" value="#" class="form-achievement__checkbox">Видел Чака Норриса
+            </label>
+            <label class="form-achievement__label">
+              <input type="checkbox" name="achievement" value="#" class="form-achievement__checkbox">Накупил сувениров
+            </label>
+            <label class="form-achievement__label">
+              <input type="checkbox" name="achievement" value="#" class="form-achievement__checkbox" checked>Удержал башню
+            </label>
+            <label class="form-achievement__label">
+              <input type="checkbox" name="achievement" value="#" class="form-achievement__checkbox">Разгромил отель
+            </label>
+          </div>
         </section>
-        <section class="form__contacts">
-          <h3 class="form__contacts-title visualy-hidden">Контактная информация</h3>
-          <label>Номер телефона
-            <input type="text" name="contacts" placeholder="Номер, пожалуйста" class="form__contacts-item">
+        <section class="form-contacts">
+          <h3 class="form-contacts__title visually-hidden">Контактная информация</h3>
+          <label class="form-contacts__label">
+            <span class="form-contacts__label-title">Номер телефона</span>
+            <input class="form-contacts__input" type="text" name="contacts" placeholder="Номер, пожалуйста">
           </label>
-          <label>Адрес почты
-            <input type="text" name="contacts" placeholder="Введите почту *" class="form__contacts-item" required>
-          </label>
-        </section>
-        <section class="form__apps">
-          <h3 class="form__apps-title">С каким приложением путешествовали?</h3>
-          <label>
-            <input type="radio" name="apps" value="#" class="form__apps-button" checked>
-          Pink для IOS</label>
-          <label>
-            <input type="radio" name="apps" value="#" class="form__apps-button">Pink для Android
-          </label>
-          <label>
-            <input type="radio" name="apps" value="#" class="form__apps-button">Windows Phone
+          <label class="form-contacts__label">
+            <span class="form-contacts__label-title">Адрес почты</span>
+            <input class="form-contacts__input" type="text" name="contacts" placeholder="Введите почту *" required>
           </label>
         </section>
-        <section class="form__comment">
-          <h3 class="form__comment-title">Опишите свои эмоции</h3>
-          <textarea rows="10" cols="25" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" class="form__comment-form"></textarea>
+        <section class="form-apps">
+          <h3 class="form-apps__title">С каким приложением путешествовали?</h3>
+          <div class="form-apps__wrapper">
+            <label class="form-apps__label">
+              <input type="radio" name="apps" value="#" class="form__apps-button" checked>Pink для IOS
+            </label>
+            <label class="form-apps__label">
+              <input type="radio" name="apps" value="#" class="form__apps-button">Pink на Android
+            </label>
+            <label class="form-apps__label">
+              <input type="radio" name="apps" value="#" class="form__apps-button">Windows Phone
+            </label>
+        </div>
+        </section>
+        <section class="form-comment">
+          <h3 class="form-comment__title">Опишите свои эмоции</h3>
+          <textarea  name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" class="form-comment__textarea"></textarea>
         </section>
         <input type="submit" name="submit" value="Отправить форму" class="form__submit">
-        <p class="form-add">*<small>- обязательные поля</small></p>
+        <p class="form__add">*<b class="form__add form__add--text"> —  обязательные поля</b></p>
       </form>
     </main>
     <footer class="page-footer container">
