@@ -6,82 +6,106 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
       <section class="header__main-background">
-        <div class="header__wrapper">
-          <a class="site-logo">
-            <h3>Pink</h3>
-          </a>
-          <button class="header__menu-toggle" type="button">
-            Menu opener
-          </button>
+        <div class="header__top-menu">
+          <div class="header__wrapper container">
+            <a class="site-logo">
+              <svg class="site-logo__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+                <g>
+                  <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
+                  <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
+                  <path fill="#FFFFFF" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"/>
+                  <path fill="#FFFFFF" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
+                </g>
+              </svg>
+            </a>
+            <button class="header__menu-toggle" type="button">
+              Menu opener
+            </button>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__list-item">
+                  <a href="index.html" class="main-nav__list-item--link">Главная</a>
+                </li>
+                <li class="main-nav__list-item">
+                  <a href="photo.html" class="main-nav__list-item--link">Фотографии</a>
+                </li>
+                <li class="main-nav__list-item">
+                  <a href="contest.html" class="main-nav__list-item--link">Конкурс</a>
+                </li>
+                <li class="main-nav__list-item">
+                  <a href="https://www.htmlacademy.ru" class="main-nav__list-item--link">HTML academy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="contest.html">Конкурс</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="https://www.htmlacademy.ru">HTML academy</a>
-            </li>
-          </ul>
-        </nav>
-        <b class="header__slogan">Взгляните на жизнь иначе!</b>
-      </section>
-      <section class="header-apps">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <a href="#" class="header-apps__button">
-          Скачать приложение
-        </a>
-        <div class="header-apps__icon">
-          <a href="#" class="header-apps__icon-item header-apps__icon-item--apple">
-            <img src="img/logo-apple.svg" alt="">
+        <section class="header-apps container">
+          <span class="header-apps__slogan">Взгляните на жизнь иначе!</span>
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <a href="#" class="header-apps__button">
+            Скачать приложение
           </a>
-          <a href="#" class="header-apps__icon-item header-apps__icon-item--android">
-            <img src="img/logo-android.svg" alt="">
-          </a>
-          <a href="#" class="header-apps__icon-item header-apps__icon-item--microsoft">
-            <img src="img/logo-microsoft.svg" alt="">
-          </a>
-        </div>
-        <p class="header-apps__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="header-apps__icon">
+            <a href="#" class="header-apps__icon-item header-apps__icon-item--apple">
+              <img src="img/logo-apple.svg" alt="">
+            </a>
+            <a href="#" class="header-apps__icon-item header-apps__icon-item--android">
+              <img src="img/logo-android.svg" alt="">
+            </a>
+            <a href="#" class="header-apps__icon-item header-apps__icon-item--microsoft">
+              <img src="img/logo-microsoft.svg" alt="">
+            </a>
+          </div>
+          <div class="header-apps__info">
+            <span class="header-apps__info--item">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+          </div>
+        </section>
       </section>
     </header>
-    <main class="page-main container">
-      <section class="offer">
+    <main class="page-main">
+      <section class="offer container">
         <h2 class="visually-hidden">Предолжения</h2>
-        <p class="offer__slogan">Устали от серости мегаполиса?</p>
-        <p class="offer__slogan">Нам есть, что вам  предложить!</p>
+        <span class="offer__title">Устали от серости мегаполиса?</span>
+        <span class="offer__slogan">Нам есть, что вам  предложить!</span>
       </section>
       <section class="info">
-        <div class="info__comment">
-          <h3 class="info__comment--title">
-            Поднимает настроение
-          </h3>
-          <p class="info__comment--text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
-        </div>
-        <div class="info__comment">
-          <h3 class="info__comment--title">Меняет мир вокруг</h3>
-          <p class="info__comment--text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="info__comment">
-          <h3 class="info__comment--title">Заводит новых друзей</h3>
-          <p class="info__comment--text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="info__wrapper container">
+          <div class="info__comment">
+            <h3 class="info__comment--title">Поднимает настроение</h3>
+            <p class="info__comment--text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="info__comment">
+            <h3 class="info__comment--title">Меняет мир вокруг</h3>
+            <p class="info__comment--text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="info__comment">
+            <h3 class="info__comment--title">Заводит новых друзей</h3>
+            <p class="info__comment--text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
       </section>
-      <section class="review">
+      <section class="effectivity">
+        <div class="effctivity__text container">
+          <h3 class="effctivity__text--title">Эффект на 24 часа!</h3>
+          <p class="effctivity__text--info">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="effctivity__text--link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="review container">
         <h2 class="visually-hidden">Отзывы</h2>
         <ul class="review__list">
           <li class="review__list-item">
-            <h3 class="review__list-title">Николай Петров</h3>
-            <p class="review__list-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <div class="review__list-wrapper">
+              <div class="review__wrapper--author-info">
+                <h3 class="review__list-title">Николай Петров</h3>
+                <p class="review__list-info">25 лет, водитель трамвая</p>
+              </div>
+              <div class="review__wrapper--comment">
+                <p class="review__list-comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </div>
           </li>
         </ul>
         <ul class="slider-toggles">
@@ -97,7 +121,7 @@
         </ul>
       </section>
       <section class="rates">
-        <table class="rates-table">
+        <table class="rates-table container">
           <tr class="rates-table__head">
             <td class="rates-table__head-item visually-hidden">
             </td>
@@ -148,23 +172,57 @@
       <section class="contact-us">
         <h2 class="contact-us__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <ul class="contact-us-list">
-          <li class="contact-us-list__item">
+          <li class="contact-us-list__item contact-us-list__item--block1">
             <h3 class="contact-us-list__item--title">Звоните:</h3>
             <p class="contact-us-list__item-adress">+7 (812) 555-66-66</p>
           </li>
-          <li class="contact-us-list__item">
+          <li class="contact-us-list__item contact-us-list__item--block2">
             <h3 class="contact-us-list__item--title">Пишите:</h3>
             <p class="contact-us-list__item-adress">mail@htmlacademy.ru</p>
           </li>
-          <li class="contact-us-list__item">
+          <li class="contact-us-list__item contact-us-list__item--block3">
             <h3 class="contact-us-list__item--title">Приезжайте в гости:</h3>
             <p class="contact-us-list__item-adress">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
-        <div class="contact-us-map">
-          <img class="map-js" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="">
+        <div class="page-map">
+          <img class="page-map--mobile" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="">
+          <img class="page-map--tablet" src="img/bg-map-tablet@1x.jpg" width="100%" height="380" alt="">
+          <img class="page-map--desktop" src="img/bg-map-desktop@1x.jpg" width="100%" height="505" alt="">
         </div>
       </section>
     </main>
+    <footer class="page-footer page-footer--index container">
+      <div class="page-footer__logo-wrapper">
+        <a href="index.html" class="site-logo">
+        <h2 class="visually-hidden">Pink</h2>
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="">
+        </a>
+      </div>
+      <div class="socials">
+        <a href="https://twitter.com/htmlacademy_ru">
+          <h3 class="visually-hidden">Наш Твиттер</h3>
+          <svg class="socials__item socials__item--facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/htmlacademy">
+          <h3 class="visually-hidden">Мы в ФБ</h3>
+          <svg class="socials__item socials__item--facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+          </svg>
+        </a>
+        <a href="https://vk.com/htmlacademy">
+          <h3 class="visually-hidden">Мы в Ютубе</h3>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+          <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="copyright">
+        <b class="copyright__text">Разработано</b>
+        <a href="https://www.htmlacademy.ru" class="copyright__button">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>

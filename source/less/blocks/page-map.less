@@ -1,0 +1,27 @@
+.page-map--mobile {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+      display: none;
+  }
+}
+
+.page-map--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+      display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+      display: none;
+    }
+}
+
+.page-map--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+      display: block;
+    }
+}
