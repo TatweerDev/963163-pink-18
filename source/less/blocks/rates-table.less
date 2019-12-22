@@ -3,7 +3,11 @@
   border-spacing: 2px;
   margin-left: -570px;
   margin-bottom: 30px;
-  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 0 auto;
+    width: 100%;
+  }
 }
 
 .rates-table__head-item {
@@ -17,6 +21,10 @@
   padding-bottom: 19px;
   margin: 0;
   min-width: 272px;
+
+  @media (min-width: @tablet-width) {
+    min-width: auto;
+  }
 }
 
 .rates-table__head-title {
@@ -42,4 +50,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 272px;
+
+  @media (min-width: @tablet-width) {
+    min-width: auto;
+  }
 }

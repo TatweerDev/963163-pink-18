@@ -13,28 +13,126 @@
   padding-bottom: 49px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 95px 0 60px 0;
+  }
+}
+
+.photos__gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .photos__image {
   margin: 0;
-  padding-left: 20px;
   display: block;
 }
 
+.photos__image--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photos__image--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.photos__image--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.photos__image--wide-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photos__image--wide-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.photos__image--wide-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .photos__wrapper {
+  display: block;
   background-color: #f2f2f2;
   color: #283645;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 280px;
   margin-bottom: 20px;
-  margin-top: 0;
-  padding: 18px 10px 20px 18px;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    height: 455px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 555px;
+  }
+}
+
+.photos__wrapper--top {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: auto;
+  }
 }
 
 .photos__comment {
+  display: block;
+  margin-left: 18px;
   padding-bottom: 10px;
+}
+
+.photos__comment--top {
+  order: 2;
 }
 
 .photos__time {
@@ -44,12 +142,17 @@
 }
 
 .photos__name {
+  margin-left: 18px;
   font-family: "OpenSansBold", "Arial", sans-serif;
 }
 
-.photos__image-wide {
-  width: 100%;
-  padding-left: 0;
+.photos__like--top {
+  order: 3;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin: 0 50px 0 auto;
+  }
 }
 
 .photos__like-action {
@@ -63,4 +166,8 @@
 .photos__like-counter {
   color: #d22856;
   font-size: 11px;
+}
+
+.photos__comment-header {
+  display: block;
 }

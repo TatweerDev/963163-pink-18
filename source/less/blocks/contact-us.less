@@ -11,16 +11,37 @@
   line-height: 30px;
   margin-top: 0;
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .contact-us-list {
   list-style: none;
   padding: 0 20px 38px 20px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .contact-us-list__item {
   margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 225px;
+    margin: 20px 55px;
+  }
 }
 
 .contact-us-list__item:last-child {
@@ -39,4 +60,16 @@
   color: #d22856;
   font-size: 24px;
   margin: 0;
+}
+
+.contact-us-list__item--block3 {
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.contact-us-list__item--block2 {
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
 }

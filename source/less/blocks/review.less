@@ -11,6 +11,15 @@
   padding: 0;
 }
 
+.review__list-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
 .review__list-item {
   text-align: center;
 }
@@ -18,9 +27,30 @@
 .review__list-title {
   font-size: 18px;
   font-family: "OpenSansBold", "Arial", sans-serif;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.review__list-info {
+  color: #283645;
+  display: none;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .review__list-comment {
+  color: #283645;
   font-size: 14px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -7,34 +7,42 @@
   align-items: center;
 }
 
-.header-apps__icon {
-  padding-top: 31px;
-}
-
-.header-apps__info {
-  text-align: center;
+.header-apps__slogan {
+  display: block;
   font-family: "OpenSansLight", "Arial", sans-serif;
-  padding-top: 18px;
-  padding-left: 45px;
-  padding-right: 45px;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-}
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 22px 38px 0 38px;
+  margin-bottom: 320px;
 
-.header-apps__icon-item {
-  padding: 16px;
-}
+  &--photo {
+    padding-top: 12px;
+    line-height: 28px;
+  }
 
-.photos-upload-form__buttons-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+  &--form {
+    padding-top: 10px;
+  }
 
-.photos-upload-form__toggles-button {
-  margin: 0 15px 0 15px;
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    width: 200px;
+    padding: 115px 0 0 50px;
+    margin: 0 auto 32px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+    width: 255px;
+    padding: 82px 0 0 25px;
+    margin-bottom: 52px;
+  }
 }
 
 .header-apps__button {
@@ -45,5 +53,66 @@
   border: 3px solid #ffffff;
   padding: 12px 37px;
   border-radius: 27px;
+  margin-bottom: 31px;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 48px 0;
+    padding: 12px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+    padding: 10px 30px;
+    font-size: 21px;
+  }
+}
+
+.header-apps__icon {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin: 0 auto 30px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.header-apps__icon-item {
+  padding: 16px;
+}
+
+.header-apps__info {
+  display: block;
+  text-align: center;
+  font-family: "OpenSansLight", "Arial", sans-serif;
+  padding: 0 45px;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    max-width: 300px;
+    margin: 0 auto 0 0;
+  }
+}
+
+
+
+.photos-upload-form__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photos-upload-form__toggles-button {
+  margin: 0 15px 0 15px;
 }
