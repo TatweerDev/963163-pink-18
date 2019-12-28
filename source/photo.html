@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -32,7 +33,7 @@
                   <a href="photo.html"class="main-nav__list-item--link" >Фотографии</a>
                 </li>
                 <li class="main-nav__list-item">
-                  <a href="contest.html" class="main-nav__list-item--link">Конкурс</a>
+                  <a href="form.html" class="main-nav__list-item--link">Конкурс</a>
                 </li>
                 <li class="main-nav__list-item">
                   <a href="https://www.htmlacademy.ru" class="main-nav__list-item--link">HTML academy</a>
@@ -153,15 +154,25 @@
           </div>
         </div>
       </section>
-      <section class="photos-upload container">
+      <section class="photos-upload">
         <h3 class="photos-upload__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h3>
         <form action="#" name="form"  enctype="multipart/form-data" class="photos-upload-form">
-          <img class="photos-upload-form__image" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="">
+          <img class="photos-upload-form__image photos-upload-form__image--mobile" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="">
+          <img class="photos-upload-form__image photos-upload-form__image--tablet" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="">
+          <img class="photos-upload-form__image photos-upload-form__image--desktop" src="img/photo-road-desktop@1x.jpg" width="280" height="375" alt="">
           <div class="photos-upload-form__toggles">
-            <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--size">1</button>
-            <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--color">2</button>
-            <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--opacity">3</button>
-            <input class="photos-upload-form__toggles-ranger" type="range" name="form">
+            <div class="photos-upload-form__toggles-button-wrapper">
+              <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--active  photos-upload-form__toggles-button--size">1</button>
+              <input class="photos-upload-form__toggles-ranger" type="range" name="form">
+            </div>
+            <div class="photos-upload-form__toggles-button-wrapper">
+              <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--color">2</button>
+              <input class="photos-upload-form__toggles-ranger photos-upload-form__toggles-ranger--tablet" type="range" name="form">
+            </div>
+            <div class="photos-upload-form__toggles-button-wrapper">
+              <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--opacity">3</button>
+              <input class="photos-upload-form__toggles-ranger photos-upload-form__toggles-ranger--tablet" type="range" name="form">
+            </div>
           </div>
           <div class="photos-upload-form__buttons-wrapper">
             <input type="submit" name="submit" class="photos-upload-form__submit" value="Запостить">

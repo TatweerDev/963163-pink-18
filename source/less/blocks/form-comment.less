@@ -1,5 +1,17 @@
 .form-comment {
+  position: relative;
   padding: 35px 26px 45px 20px;
+  order: 5;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .form-comment__title {
@@ -11,6 +23,19 @@
   margin-top: 0;
   margin-bottom: 18px;
   padding-left: 5px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    padding: 0 20px 0 20px;
+    top: -10px;
+    left: 190px;
+    background-color: white;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 350px;
+  }
 }
 
 .form-comment__textarea {
