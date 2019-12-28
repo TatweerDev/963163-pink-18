@@ -1,5 +1,36 @@
 .form-contacts {
+  position: relative;
   padding: 10px 20px 42px 20px;
+  order: 3;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+    order: 3;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-contacts__title {
+  display: none;
+  text-align: center;
+  color: #d22856;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 20px 0 20px;
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    top: -10px;
+    left: 31%;
+    background-color: white;
+  }
 }
 
 .form-contacts__label {

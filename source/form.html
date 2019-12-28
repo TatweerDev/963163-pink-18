@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -32,7 +33,7 @@
                   <a href="photo.html"class="main-nav__list-item--link" >Фотографии</a>
                 </li>
                 <li class="main-nav__list-item">
-                  <a href="contest.html" class="main-nav__list-item--link">Конкурс</a>
+                  <a href="form.html" class="main-nav__list-item--link">Конкурс</a>
                 </li>
                 <li class="main-nav__list-item">
                   <a href="https://www.htmlacademy.ru" class="main-nav__list-item--link">HTML academy</a>
@@ -46,7 +47,7 @@
         </div>
       </section>
     </header>
-    <main class="page-main container">
+    <section class="page-main container">
       <form class="form">
         <h3 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h3>
         <section class="form-name">
@@ -88,7 +89,7 @@
           </div>
         </section>
         <section class="form-contacts">
-          <h3 class="form-contacts__title visually-hidden">Контактная информация</h3>
+          <h3 class="form-contacts__title">Контактная информация</h3>
           <label class="form-contacts__label">
             <span class="form-contacts__label-title">Номер телефона</span>
             <input class="form-contacts__input" type="text" name="contacts" placeholder="Номер, пожалуйста">
@@ -116,8 +117,10 @@
           <h3 class="form-comment__title">Опишите свои эмоции</h3>
           <textarea  name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" class="form-comment__textarea"></textarea>
         </section>
-        <input type="submit" name="submit" value="Отправить форму" class="form__submit">
-        <p class="form__add">*<b class="form__add form__add--text"> —  обязательные поля</b></p>
+        <section class="form-submit">
+          <input type="submit" name="submit" value="Отправить форму" class="form__submit-input">
+          <p class="form__add">*<b class="form__add form__add--text"> —  обязательные поля</b></p>
+        </section>
       </form>
     </main>
     <footer class="page-footer container">

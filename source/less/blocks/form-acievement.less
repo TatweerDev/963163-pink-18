@@ -1,25 +1,58 @@
 .form-achievement {
+  position: relative;
   background-color: #e5e5e5;
   padding-top: 36px;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 66px;
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .form-achievement__title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: bold;
   text-align: center;
   color: #d22856;
   font-size: 14px;
-  font-weight: 300;
   line-height: 18px;
   text-transform: uppercase;
   padding: 0 50px 47px 50px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    padding: 0 20px 0 20px;
+    top: -10px;
+    left: 110px;
+    background-color: white;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 250px;
+  }
 }
 
 .form-achievement__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form-achievement__label {
+  display: block;
   font-size: 18px;
   color: #283645;
   padding-bottom: 57px;
