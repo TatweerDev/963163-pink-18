@@ -7,30 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header">      
       <section class="header__photo-background">
         <div class="header__top-menu">
-          <div class="header__wrapper container">
-            <a href="index.html" class="site-logo">
-              <svg class="site-logo__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-                <g>
-                  <path fill="#FFFFFF" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
-                  <path fill="#FFFFFF" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
-                  <path fill="#FFFFFF" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.224,0.58,1.224,1.256v20.349c0,0.676-0.481,1.19-1.158,1.19h-0.129c-0.548,0-0.935-0.321-1.319-0.772l-13.975-17.868v17.45c0,0.676-0.547,1.256-1.256,1.256c-0.676,0-1.223-0.58-1.223-1.256V18.532 H102.744z"/>
-                  <path fill="#FFFFFF" d="M128.173,18.5c0-0.708,0.58-1.288,1.257-1.288c0.708,0,1.286,0.58,1.286,1.288v12.331l12.848-13.168 c0.29-0.257,0.579-0.451,0.998-0.451c0.676,0,1.225,0.612,1.225,1.256c0,0.354-0.162,0.644-0.42,0.901l-7.984,7.92l8.564,10.561 c0.225,0.291,0.354,0.547,0.354,0.935c0,0.676-0.578,1.288-1.286,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.402-10.463l-4.863,4.861 v4.894c0,0.708-0.578,1.288-1.286,1.288c-0.677,0-1.257-0.58-1.257-1.288V18.5H128.173z"/>
-                </g>
-              </svg>
+          <nav class="main-nav">
+            <a class="site-logo site-logo--index-header">
+              <img class="site-logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Pink">
+              <img class="site-logo--tablet" src="img/logo-pink-white-tablet.svg" width="147" height="40" alt="Pink">
+              <img class="site-logo--desktop" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Pink">
             </a>
             <button class="header__menu-toggle" type="button">
-              Menu opener
-            </button>
-            <nav class="main-nav">
+              <span class="visually-hidden">Menu opener</span>
+            </button>            
               <ul class="main-nav__list">
                 <li class="main-nav__list-item">
                   <a href="index.html" class="main-nav__list-item--link">Главная</a>
                 </li>
                 <li class="main-nav__list-item">
-                  <a href="photo.html"class="main-nav__list-item--link" >Фотографии</a>
+                  <a href="photo.html" class="main-nav__list-item--link">Фотографии</a>
                 </li>
                 <li class="main-nav__list-item">
                   <a href="form.html" class="main-nav__list-item--link">Конкурс</a>
@@ -39,11 +33,11 @@
                   <a href="https://www.htmlacademy.ru" class="main-nav__list-item--link">HTML academy</a>
                 </li>
               </ul>
-            </nav>
-          </div>
+          </nav>          
+        </div>
         </div>
         <div class="header__slogan-wrapper container">
-          <h2 class="header__slogan">Фотографии пользователей</h2>
+          <h2 class="header__slogan header__slogan--photo">Фотографии пользователей</h2>
         </div>
       </section>
     </header>
@@ -51,10 +45,12 @@
       <section class="photos">
         <h3 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хавтает ваших?
         </h3>
-        <img class="photos__image photos__image--wide-mobile" src="img/panorama-mobile@1x.jpg" width="100%" height="137" alt="">
-        <img class="photos__image photos__image--wide-tablet" src="img/panorama-tablet@1x.jpg" width="100%" height="509" alt="">
-        <img class="photos__image photos__image--wide-desktop" src="img/panorama-desktop@1x.jpg" width="100%" height="506" alt="">
-        <div class="photos__wrapper photos__wrapper--top container">
+        <div class="photos__panorama-wrapper">
+          <img class="photos__image photos__image--wide-mobile" src="img/panorama-mobile@1x.jpg" width="100%" height="137" alt="">
+          <img class="photos__image photos__image--wide-tablet" src="img/panorama-tablet@1x.jpg" width="100%" height="509" alt="">
+          <img class="photos__image photos__image--wide-desktop" src="img/panorama-desktop@1x.jpg" width="100%" height="506" alt="">
+        </div>
+        <div class="photos__wrapper photos__wrapper--top">
           <header class="photos__comment-header photos__comment-header--top">
             <span class="photos__name">Анна</span>
             <span class="photos__time">(5 минут назад)</span>
@@ -62,8 +58,11 @@
           <div class="photos__comment photos__comment--top">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </div>
           <div class="photos__like photos__like--top">
-            <button class="photos__button btn--like" type="button"></button>
-            <a href="#" class="photos__like-action">Нравится:</a>
+            <label class="photos__like-action">
+              <input class="photos__button" type="checkbox"  title="Мне нравится"></input>
+              <span class="photos__like-checkbox photos__like-checkbox--top"></span>
+              Нравится:
+            </label>
             <span class="photos__like-counter">215</span>
           </div>
         </div>
@@ -78,8 +77,11 @@
             </header>
             <div class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
             <div class="photos__like">
-              <button class="photos__button btn--like" type="button"></button>
-              <a href="#" class="photos__like-action">Нравится:</a>
+              <label class="photos__like-action">
+                <input class="photos__button" type="checkbox"  title="Мне нравится"></input>
+                <span class="photos__like-checkbox"></span>
+                Нравится:
+              </label>
               <span class="photos__like-counter">356</span>
             </div>
           </div>
@@ -93,8 +95,11 @@
             </header>
             <div class="photos__comment">Соседи будут рады!</div>
             <div class="photos__like">
-              <button class="photos__button btn--like" type="button"></button>
-              <a href="#" class="photos__like-action">Нравится:</a>
+              <label class="photos__like-action">
+                <input class="photos__button" type="checkbox"  title="Мне нравится"></input>
+                <span class="photos__like-checkbox"></span>
+                Нравится:
+              </label>
               <span class="photos__like-counter">666</span>
             </div>
           </div>
@@ -108,9 +113,12 @@
             </header>
             <div class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
             <div class="photos__like">
-              <button class="photos__button btn--like" type="button"></button>
-              <a href="#" class="photos__like-action">Нравится:</a>
-              <span class="photos__like-counter">215</span>
+              <label class="photos__like-action">
+                <input class="photos__button" type="checkbox"  title="Мне нравится"></input>
+                <span class="photos__like-checkbox"></span>
+                Нравится:
+              </label>
+              <span class="photos__like-counter">254</span>
             </div>
           </div><div class="photos__wrapper">
             <img class="photos__image photos__image--mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
@@ -121,8 +129,12 @@
               <span class="photos__time">(25 часов назад)</span>
             </header>
             <div class="photos__comment">Самая кубанская в мире!</div>
-            <div class="photos__like"><button class="photos__button btn--like" type="button"></button>
-              <a href="#" class="photos__like-action">Нравится:</a>
+            <div class="photos__like">
+              <label class="photos__like-action">
+                <input class="photos__button" type="checkbox"  title="Мне нравится"></input>
+                <span class="photos__like-checkbox"></span>
+                Нравится:
+              </label>
               <span class="photos__like-counter">4</span>
             </div>
           </div><div class="photos__wrapper">
@@ -134,8 +146,12 @@
               <span class="photos__time">(40 часов назад)</span>
             </header>
               <div class="photos__comment">Где снег то?</div>
-              <div class="photos__like"><button class="photos__button btn-like" type="button"></button>
-              <a href="#" class="photos__like-action">Нравится:</a>
+              <div class="photos__like">
+                <label class="photos__like-action">
+                  <input class="photos__button" type="checkbox"  title="Мне нравится"></input>
+                  <span class="photos__like-checkbox"></span>
+                  Нравится:
+                </label>
               <span class="photos__like-counter">150</span>
             </div>
           </div><div class="photos__wrapper">
@@ -147,8 +163,12 @@
               <span class="photos__time">(45 часов назад)</span>
             </header>
             <div class="photos__comment">Всем GM и взаимные лайки!</div>
-            <div class="photos__like"><button class="photos__button btn-like" type="button"></button>
-              <a href="#" class="photos__like-action">Нравится:</a>
+            <div class="photos__like">
+              <label class="photos__like-action">
+                <input class="photos__button" type="checkbox"  title="Мне нравится"></input>
+                <span class="photos__like-checkbox"></span>
+                Нравится:
+              </label>
               <span class="photos__like-counter">2560</span>
             </div>
           </div>
@@ -185,32 +205,38 @@
       <div class="page-footer__logo-wrapper">
         <a href="index.html" class="site-logo">
         <h2 class="visually-hidden">Pink</h2>
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="">
+        <img class="page-footer__logo-image page-footer__logo-image--tablet" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="">
+        <img class="page-footer__logo-image page-footer__logo-image--desktop" src="img/logo-pink-blue-desktop.svg" width="147" height="40" alt="">
         </a>
       </div>
       <div class="socials">
-        <a href="https://twitter.com/htmlacademy_ru">
+        <a class="socials-link" href="https://twitter.com/htmlacademy_ru">
           <h3 class="visually-hidden">Наш Твиттер</h3>
-          <svg class="socials__item socials__item--facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+          <svg class="socials__item socials__item--twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
           </svg>
         </a>
-        <a href="https://www.facebook.com/htmlacademy">
+        <a class="socials-link" href="https://www.facebook.com/htmlacademy">
           <h3 class="visually-hidden">Мы в ФБ</h3>
           <svg class="socials__item socials__item--facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
             <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
           </svg>
         </a>
-        <a href="https://vk.com/htmlacademy">
+        <a class="socials-link" href="https://vk.com/htmlacademy">
           <h3 class="visually-hidden">Мы в Ютубе</h3>
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+          <svg class="socials__item socials__item--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
           <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
           </svg>
         </a>
       </div>
       <div class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a href="https://www.htmlacademy.ru" class="copyright__button">HTML Academy</a>
+        <a href="https://www.htmlacademy.ru" class="copyright__button">
+          <h3 class="visually-hidden">HTML Academy</h3>
+          <svg class="copyright__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>          
+        </a>
       </div>
     </footer>
   </body>

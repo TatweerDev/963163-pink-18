@@ -1,6 +1,10 @@
 .photos {
   margin: 0;
   padding-top: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 92px;
+  }
 }
 
 .photos__title {
@@ -8,23 +12,70 @@
   font-weight: 300;
   line-height: 30px;
   color: #283645;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 49px;
+  padding: 0 40px 48px 40px;  
   text-align: center;
   margin: 0;
 
   @media (min-width: @tablet-width) {
+    width: 440px;
     font-size: 18px;
     line-height: 30px;
-    margin: 95px 0 60px 0;
+    padding: 0;
+    margin: 0 auto 75px auto;  
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 575px;
+    margin: 0px auto 88px auto;
+  }
+}
+
+.photos__panorama-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 137px;
+
+  @media (min-width: @tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    display: block;
+    width: 140px;
+    top: 0;
+    right: 25px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #d22856;
+
+    @media (min-width: @tablet-width) {
+      top: 58px;
+      right: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 54px;
+      right: 136px;
+    }
   }
 }
 
 .photos__gallery-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 19px;
   align-items: center;
 
   @media (min-width: @tablet-width) {
@@ -98,41 +149,69 @@
   background-color: #f2f2f2;
   color: #283645;
   width: 280px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
-
+  
   @media (min-width: @tablet-width) {
-    height: 455px;
+    max-height: 435px;
     width: 300px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 555px;
+    max-height: 555px;
+    margin-bottom: 54px;
   }
-}
 
-.photos__wrapper--top {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 50px;
+  &--top {
+    width: 280px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    padding: 18px 0 20px 0;    
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: auto;
+    @media (min-width: @tablet-width) {
+      width: 620px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: auto;    
+      padding: 24px 0 12px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 940px;
+    }
   }
 }
 
 .photos__comment {
-  display: block;
-  margin-left: 18px;
-  padding-bottom: 10px;
+  display: block;  
+  margin: 0 0 8px 18px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 10px 27px;
+    height: 50px;
+    overflow: hidden;
+    width: 241px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 45px;
+    overflow: hidden;
+    margin-bottom: 13px;   
+  }
 }
 
-.photos__comment--top {
+.photos__comment--top {  
   order: 2;
+  width: auto;
+
+  @media (min-width: @desktop-width) {
+    height: auto;
+  }
 }
 
 .photos__time {
@@ -141,26 +220,85 @@
   font-size: 12px;
 }
 
-.photos__name {
-  margin-left: 18px;
+.photos__name {  
+  padding-top: 18px;
   font-family: "OpenSansBold", "Arial", sans-serif;
 }
 
-.photos__like--top {
+.photos__like {
+  margin-left: 18px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: auto 0 0 12px;
+  }
+}
+
+.photos__like--top {  
   order: 3;
 
   @media (min-width: @tablet-width) {
     order: 1;
-    margin: 0 50px 0 auto;
+    margin: 0px 62px 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0px 64px 0 auto;
+  }
+}
+
+.photos__button {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  
+  &:checked + .photos__like-checkbox {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='12.54' height='11.99' fill = '%23d22856' viewBox='521.94 473.06 12.54 11.99'%3E%3Cpath d='M528.17 485.06a.74.74 0 01-.55-.25 318.9 318.9 0 01-4.86-5.58 3.8 3.8 0 015.46-5.27 3.8 3.8 0 016.26 2.9c0 .91-.31 1.75-.9 2.38l-4.85 5.56a.73.73 0 01-.56.25zm-4.24-6.71c.2.25 2.47 2.84 4.24 4.86l4.33- 4.95c.34-.37.52-.86.52-1.4a2.33 2.33 0 00-2.33-2.33c-.73 0-1.43.35- 1.9.95a.76.76 0 01-.59.27.73.73 0 01-.58-.3 2.33 2.33 0 00-1.88-.92 2.33 2.33 0 00-1.83 3.8l.02.02z'/%3E%3C/svg%3E");
+  }
+}
+
+.photos__like-checkbox {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='12.54' height='11.99' fill = '%23d22856' viewBox='521.94 473.06 12.54 11.99'%3E%3Cpath d='M528.17 485.06a.74.74 0 01-.55-.25 318.9 318.9 0 01-4.86-5.58 3.8 3.8 0 015.46-5.27 3.8 3.8 0 016.26 2.9c0 .91-.31 1.75-.9 2.38l-4.85 5.56a.73.73 0 01-.56.25zm-4.24-6.71c.2.25 2.47 2.84 4.24 4.86l4.33-4.95c.34-.37.52-.86.52-1.4a2.33 2.33 0 00-2.33-2.33c-.73 0-1.43.35-1.9.95a.76.76 0 01-.59.27.73.73 0 01-.58-.3 2.33 2.33 0 00-1.88-.92 2.33 2.33 0 00-1.83 3.8l.02.02z'/%3E%3C/svg%3E");
+  top: 3px;
+  background-repeat: no-repeat;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 2px;
+    left: 243px;
+  }
+
+  &--top {
+    width: 13px;
+    height: 13px;
+    @media (min-width: @tablet-width) {
+      top: 3px;
+      left: 125px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 2px;
+      left: 123px;
+    }
   }
 }
 
 .photos__like-action {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   color: #d22856;
-  padding-left: 12px;
+  padding-left: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 16px;
+  }
 }
 
 .photos__like-counter {
@@ -169,5 +307,19 @@
 }
 
 .photos__comment-header {
+  padding-top: 18px;
+  padding-left: 18px;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    padding: 23px 0 0 27px;   
+  }
+
+  &--top {
+    padding: 0px 0 0 18px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 0 0 27px;
+    }
+  }
 }

@@ -1,7 +1,56 @@
 .copyright {
-  display: block;
+  position: relative;
+  display: flex;
   font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  padding: 20px 44px 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding: 0px 46px 0 0;
+    margin-bottom: 38px;
+  }
+}
+
+.copyright__text {
+
+  @media (min-width: @tablet-width) {
+    margin-top: 3px;
+    margin-right: 45px
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.copyright__logo {
+  margin: 10px 10px;
+  fill: #d22856;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+  }
+}
+
+.copyright__button {
+  position: absolute;
+  left: 91px;
+  top: 3px;  
+
+  @media (min-width: @tablet-width) {
+    left: 91px;
+    top: -14px;
+  }
+
+  @media (min-width: @desktop-width) {    
+    left: 116px;
+    top: -19px;
+  }
 }

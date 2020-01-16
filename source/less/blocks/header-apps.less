@@ -1,47 +1,22 @@
 .header-apps {
-  padding-top: 26px;
+  padding-top: 27px;
   padding-bottom: 30px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-}
-
-.header-apps__slogan {
-  display: block;
-  font-family: "OpenSansLight", "Arial", sans-serif;
-  text-align: center;
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: 300;
-  line-height: 30px;
-  padding: 22px 38px 0 38px;
-  margin-bottom: 320px;
-
-  &--photo {
-    padding-top: 12px;
-    line-height: 28px;
-  }
-
-  &--form {
-    padding-top: 10px;
-  }
 
   @media (min-width: @tablet-width) {
-    font-size: 40px;
-    line-height: 47px;
+    background-color: transparent;
+    position: absolute;
+    top: 351px;        
+    padding-left: 22px;    
     text-align: center;
-    width: 200px;
-    padding: 115px 0 0 50px;
-    margin: 0 auto 32px 0;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 50px;
-    line-height: 60px;
-    width: 255px;
-    padding: 82px 0 0 25px;
-    margin-bottom: 52px;
+    top: 423px;
+    left: 106px;
   }
 }
 
@@ -90,9 +65,10 @@
   display: block;
   text-align: center;
   font-family: "OpenSansLight", "Arial", sans-serif;
-  padding: 0 45px;
+  padding: 0 35px;
   font-size: 14px;
   line-height: 24px;
+  max-width: 230px;
 
   @media (min-width: @tablet-width) {
     text-align: center;
