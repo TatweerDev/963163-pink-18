@@ -1,14 +1,23 @@
 .photos-upload-form {
   background-color: #f2f2f2;
-  padding: 20px 20px 40px 20px;
+  padding: 19px 17px 42px 15px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
     height: 410px;
-    padding: 57px 20px 54px 20px;
+    padding: 57px 12px 44px 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 0 auto;
+    padding: 55px 0px 44px 79px;    
+    max-width: 860px;
+    width: 100%;
+    align-items: normal
   }
 }
 
@@ -25,11 +34,13 @@
 
 .photos-upload-form__image {
   display: block;
+  margin-bottom: 47px;
 }
 
 .photos-upload-form__image--mobile {
   @media (min-width: @tablet-width) {
     display: none;
+    padding-bottom: 33px;
   }
 }
 
@@ -54,59 +65,237 @@
 }
 
 .photos-upload-form__toggles {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding-top: 38px;
+  justify-content: center;  
   margin-bottom: 38px;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #dddfe0;
+  flex-wrap: wrap;  
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     padding-top: 0;
-    border-bottom: none;
+    width: 275px;
+    margin: 0 0 65px 44px;
+
+    @media (min-width: @desktop-width) {
+      width: 410px;
+      margin: 0 0 145px 22px;
+    }
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 330px;
+    height: 1px;
+    background-color: #dddfe0;
+    bottom: 0;
+    left: -25px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }  
 }
 
-.photos-upload-form__buttons-wrapper {
+.photos-upload-form__toggles-wrapper {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 20px 0 16px;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-  }
-}
-
-.photos-upload-form__toggles-button-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  margin-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
+    position: relative;
     flex-direction: row;
     border-bottom: 1px solid #dddfe0;
-    padding: 0;
+    padding: 0;    
+  }
+
+  &--mobile {
+    position: relative;
+    padding-bottom: 32px;
+
+    @media (min-width: @tablet-width) {
+      padding: inherit;
+    }
   }
 }
 
 .photos-upload-form__toggles-button {
-  margin: 0 15px 30px 15px;
+  margin: 0 15px 31px 15px;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  &--size {
+    @media (min-width: @tablet-width) {
+      padding-top: 55px;
+    }
+  }
+
+  &--color {
+    @media (min-width: @tablet-width) {
+      padding-top: 70px;
+    }
+  }
+
+  &--opacity {
+    @media (min-width: @tablet-width) {
+      padding-top: 70px;
+    }
+  }
+}
+
+.photos-upload-form__icon {
+  position: absolute;
+  fill: #b5b9be;
+  display: block;
+  width: 48px;
+  height: 48px;  
+
+  @media (min-width: @tablet-width) {
+    fill: #d22856;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--crop {
+    left: 34px;
+    top: -8px;
+
+    @media (min-width: @tablet-width) {
+      left: 2px;
+      top: 9px; 
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 6px;
+      top: -2px;
+    }
+  }
+
+  &--fill {
+    left: 30px;
+    top: -6px;
+
+    @media (min-width: @tablet-width) {
+      left: 3px;
+      top: 27px
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 8px;
+      top: 15px;
+    }
+  }
+
+  &--contrast {
+    left: 113px;
+    top: -12px;
+
+    @media (min-width: @tablet-width) {
+      left: 6px;
+      top: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 9px;
+      top: 7px;
+    }
+  }  
+
+  &--active {
+    fill: #d22856;
+  }
+
+  &:hover {
+    fill: #8d949b;
+  }
 }
 
 .photos-upload-form__toggles-ranger {
-  width: 100%;
-}
-
-.photos-upload-form__toggles-ranger--tablet {
-  display: none;
+  -webkit-appearance: none;
+  min-width: 238px;
+  height: 2px;
+  background-color: #283645;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    min-width: auto;
+    width: 100%;
+    margin: 0 18px 0 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 22px 0 64px;
+  }
+
+  &--contrast, &--fill {
+    display: none;
+  
+    @media (min-width: @tablet-width) {
+      display: block;
+      }
+    }
+
+    &--crop {
+      @media (min-width: @tablet-width) {
+        margin-bottom: 15px;
+          
+      }
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background-color: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-thumb:active {
+    background-color: #d22856;
+  }
+
+}
+
+.photos-upload-form__size-svg {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.photos-upload-form__buttons-wrapper {  
+  display: flex;
+  flex-direction: column;  
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;    
+    padding: 0;
+    width: 260px;
+    margin-left: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -115,12 +304,30 @@
   color: #d22856;
   font-size: 18px;
   font-family: "OpenSansBold", "Arial", sans-serif;
-  border: 3px solid #d22856;
+  border: 3px solid #d22856;  
   padding: 12px 37px;
   border-radius: 27px;
   text-decoration: none;
   background-color: #f2f2f2;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+    padding: 11px 40px 14px 36px;    
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: #f2f2f2;
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: rgba(242,242,242, 0.3);
+  }
 }
 
 .photos-upload-form__reset {
@@ -133,4 +340,23 @@
   border-radius: 27px;
   text-decoration: none;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px 40px 14px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    height: 55px;
+  }
+
+  &:hover {
+    border: 3px solid #b5b9be;
+    color: #b5b9be;
+  }
+
+  &:active {
+    color: #cbced2;
+    background-color: #b5b9be;
+  }
 }
