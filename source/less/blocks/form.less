@@ -1,11 +1,12 @@
 .form {
   display: flex;
   flex-direction: column;  
-  padding-top: 46px;
+  padding: 46px 0 21px 0;
+
 
   @media (min-width: @tablet-width) {
-    padding-top: 100px;
-    margin-bottom: 40px;
+    padding: 92px 0 0 0;
+    margin-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,6 +30,31 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    margin-bottom: 60px;
+    margin: 0 auto 71px auto;
+    width: 496px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    margin-bottom: 80px;
+    padding: 0;
+}
+}
+
+.form__title-add {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: #283645;
+    font-family: "OpenSans", "Arial", sans-serif;
+    line-height: 30px;
+    margin: 0 auto 74px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }

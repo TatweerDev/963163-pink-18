@@ -1,20 +1,26 @@
 .site-logo {
-  padding-top: 24px;
-  margin-left: 14px;
+  padding-top: 13px;
+  margin-left: 19px;
+  display: block;
+
+  &--index-header {
+    padding-left: 6px;
+    margin-right: 120px;
+  }
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 0 11%
+    margin: 0 0 0 14px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 27px;
+    padding-left: 10px;
     margin: 0;  
   }
+}
 
-  &--index-header {
-    padding-left: 10px;
-    margin-right: 120px;
-  }
+
+.site-logo__svg {   
 
   &--mobile {
     @media (min-width: @tablet-width) {
@@ -27,7 +33,7 @@
   
     @media (min-width: @tablet-width) {
       display: block;
-      padding-top: 14px;
+      padding-top: 14px;      
     }
   
     @media (min-width: @desktop-width) {
@@ -39,7 +45,42 @@
     display: none;
   
     @media (min-width: @desktop-width) {
-      display: block;
+      display: block;      
+    }
+  }
+
+  &--header {
+    fill: #fff;
+  
+    &:hover {
+      fill: #d22856;
+    }
+  
+    &:active {
+      fill: #fff;
+      opacity: 0.3;
+    }
+  }
+
+  &--footer {
+    fill: #283645;
+
+    &:hover {
+      fill: #d22856;
+    }
+  
+    &:active {
+      fill: #283645;
+      opacity: 0.3;
+    }
+  }
+
+  &--footer-mobile {
+    display: block;
+
+    @media (min-width: @desktop-width) {
+      display: none;
     }
   }
 }
+

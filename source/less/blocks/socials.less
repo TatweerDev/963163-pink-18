@@ -1,14 +1,14 @@
 .socials {
   display: flex;
   justify-content: space-between;
-  margin: 0px 67px 22px 67px;
+  margin: 0px 67px 25px 67px;
 
   @media (min-width: @tablet-width) {
-    margin: 20px 22px 22px 0px;
+    margin: 20px 18px 22px 0px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 42px 12px;
+    margin: 0 0 42px 8px;
   }
 }
 
@@ -21,7 +21,14 @@
   border: 3px solid #e9ebec;
   border-radius: 50%;
   background-position: 50% 50%;
-  
+
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .socials__item {

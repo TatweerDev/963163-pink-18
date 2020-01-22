@@ -1,16 +1,18 @@
 .form-comment {
   position: relative;
-  padding: 35px 26px 45px 20px;
+  padding: 38px 26px 45px 20px;
   order: 5;
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
     border: 2px solid #e5e5e5;
+    padding: 44px 46px 46px 59px;
     margin-bottom: 66px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
+    padding: 41px 19px 38px 59px;
   }
 }
 
@@ -28,13 +30,13 @@
     position: absolute;
     display: block;
     padding: 0 20px 0 20px;
-    top: -10px;
-    left: 190px;
+    top: -12px;
+    left: 196px;
     background-color: white;
   }
 
   @media (min-width: @desktop-width) {
-    left: 350px;
+    left: 357px;
   }
 }
 
@@ -52,20 +54,16 @@
   padding-bottom: 122px;
   overflow: hidden;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 115px;
+    padding-left: 17px;
+}
+
+  @media (min-width: @desktop-width) {
+    padding: 15px 0px 49px 17px;
+  }
+
   &::placeholder {
     color: #283645;
   }
-}
-
-.form__add {
-  text-align: center;
-  color: #d22856;
-}
-
-.form__add--text {
-  text-align: center;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: rgb(40, 54, 69);
-  font-weight: 300;
 }
