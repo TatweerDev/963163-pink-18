@@ -179,7 +179,8 @@
                 </label>
               <span class="photos__like-counter">150</span>
             </div>
-          </div><div class="photos__wrapper">
+          </div>
+          <div class="photos__wrapper">
             <picture>
               <source  media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source  media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
@@ -204,11 +205,11 @@
       <section class="photos-upload">
         <h3 class="photos-upload__title">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h3>
         <form action="#" name="form"  enctype="multipart/form-data" class="photos-upload-form">
-          <picture class="photos-upload-form__picture">
-            <img class="photos-upload-form__image photos-upload-form__image--mobile" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="">
-            <img class="photos-upload-form__image photos-upload-form__image--tablet" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="">
-            <img class="photos-upload-form__image photos-upload-form__image--desktop" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="">
-          </picture>
+          <picture>
+            <source  media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source  media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="photos-upload-form__image" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x">              
+          </picture>            
           <div class="photos-upload-form__toggles">
             <div class="photos-upload-form__toggles-wrapper photos-upload-form__toggles-wrapper--mobile">
               <button class="photos-upload-form__toggles-button photos-upload-form__toggles-button--size">
