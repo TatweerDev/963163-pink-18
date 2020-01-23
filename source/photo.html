@@ -58,9 +58,9 @@
         </h3>
         <div class="photos__panorama-wrapper">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="photos__image" src="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" width="100%" height="137" alt="">            
+            <source  media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source  media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photos__image photos__image--wide" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x">            
           </picture>
         </div>
         <div class="photos__wrapper photos__wrapper--top">
@@ -81,9 +81,11 @@
         </div>
         <div class="photos__gallery-wrapper container">
           <div class="photos__wrapper">
-            <img class="photos__image photos__image--mobile" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
-            <img class="photos__image photos__image--tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="">
-            <img class="photos__image photos__image--desktop" src="img/photo-car-desktop@1x.jpg" width="300" height="401" alt="">
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source  media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="photos__image" srcset="img/photo-car-mobile@1x.jpg 1x, img/photo-car-mobile@2x.jpg 2x">              
+            </picture>
             <header class="photos__comment-header">
               <span class="photos__name">Левон</span>
               <span class="photos__time">(5 часов назад)</span>
@@ -99,9 +101,11 @@
             </div>
           </div>
           <div class="photos__wrapper">
-            <img class="photos__image photos__image--mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
-            <img class="photos__image photos__image--tablet" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="">
-            <img class="photos__image photos__image--desktop" src="img/photo-drumset-desktop@1x.jpg" width="300" height="401" alt="">
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source  media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photos__image" srcset="img/photo-drumset-mobile@1x.jpg 1x, img/photo-drumset-mobile@2x.jpg 2x">              
+            </picture>            
             <header class="photos__comment-header">
               <span class="photos__name">Антон</span>
               <span class="photos__time">(12 часов назад)</span>
@@ -117,9 +121,11 @@
             </div>
           </div>
           <div class="photos__wrapper">
-            <img class="photos__image photos__image--mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
-            <img class="photos__image photos__image--tablet" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="">
-            <img class="photos__image photos__image--desktop" src="img/photo-window-desktop@1x.jpg" width="300" height="401" alt="">
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source  media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photos__image" srcset="img/photo-window-mobile@1x.jpg 1x, img/photo-window-mobile@2x.jpg 2x">              
+            </picture>
             <header class="photos__comment-header">
               <span class="photos__name">Борис</span>
               <span class="photos__time">(20 часов назад)</span>
@@ -133,10 +139,13 @@
               </label>
               <span class="photos__like-counter">254</span>
             </div>
-          </div><div class="photos__wrapper">
-            <img class="photos__image photos__image--mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
-            <img class="photos__image photos__image--tablet" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="">
-            <img class="photos__image photos__image--desktop" src="img/photo-fair-desktop@1x.jpg" width="300" height="401" alt="">
+          </div>
+          <div class="photos__wrapper">
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source  media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photos__image" srcset="img/photo-fair-mobile@1x.jpg 1x, img/photo-fair-mobile@2x.jpg 2x">              
+            </picture>
             <header class="photos__comment-header">
               <span class="photos__name">Сергей</span>
               <span class="photos__time">(25 часов назад)</span>
@@ -150,10 +159,13 @@
               </label>
               <span class="photos__like-counter">4</span>
             </div>
-          </div><div class="photos__wrapper">
-            <img class="photos__image photos__image--mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
-            <img class="photos__image photos__image--tablet" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="">
-            <img class="photos__image photos__image--desktop" src="img/photo-pov-desktop@1x.jpg" width="300" height="401" alt="">
+          </div>
+          <div class="photos__wrapper">
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source  media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photos__image" srcset="img/photo-pov-mobile@1x.jpg 1x, img/photo-pov-mobile@2x.jpg 2x">              
+            </picture>
             <header class="photos__comment-header">
               <span class="photos__name">Максим</span>
               <span class="photos__time">(40 часов назад)</span>
@@ -168,9 +180,11 @@
               <span class="photos__like-counter">150</span>
             </div>
           </div><div class="photos__wrapper">
-            <img class="photos__image photos__image--mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
-            <img class="photos__image photos__image--tablet" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="">
-            <img class="photos__image photos__image--desktop" src="img/photo-wing-desktop@1x.jpg" width="300" height="401" alt="">
+            <picture>
+              <source  media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source  media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="photos__image" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x">              
+            </picture>            
             <header class="photos__comment-header">
               <span class="photos__name">Надежда</span>
               <span class="photos__time">(45 часов назад)</span>
