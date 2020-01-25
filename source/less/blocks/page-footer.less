@@ -19,13 +19,14 @@
   &--index {
     display: none;
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
+    @media (min-width: @tablet-width) {
+      display: flex;
+      padding-top: 12px;
+    }
 
-  @media (min-width: @desktop-width) {
-    display: flex;
-    padding-top: 68px;
+    @media (min-width: @desktop-width) {
+      display: flex;
+      padding-top: 68px;
     }
   }
 
@@ -41,23 +42,28 @@
     @media (min-width: @tablet-width) {
       padding: 0;
     }
+
     @media (min-width: @desktop-width) {
       padding-top: 3px;
     }
-  }  
+  }
 }
 
 
 .page-footer__logo-wrapper {
   display: block;
-  margin-bottom: 32px;  
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    padding: 15px 0px 0 0px;
+    padding: 15px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 58px;
     padding: 0;
+  }
+
+  &--index {
+    padding: 2px 0 0 10px;
   }
 }
