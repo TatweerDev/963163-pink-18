@@ -1,13 +1,13 @@
 .contact-us {
   text-align: center;
-  padding: 41px 0 20px 0;  
+  padding: 41px 0 20px 0;
 
   @media (min-width: @tablet-width) {
     padding: 45px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 59px 0px 0 0px;
+    padding: 59px 0 0 0;
   }
 }
 
@@ -52,16 +52,16 @@
   }
 }
 
-.contact-us__list-item {  
+.contact-us__list-item {
   margin: 0 30px 20px 30px;
 
   @media (min-width: @tablet-width) {
     width: 225px;
-    margin: 0px 42px 45px 55px;
+    margin: 0 42px 45px 55px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0px 47px;
+    margin: 0 47px;
   }
 
   &:last-child {
@@ -92,24 +92,24 @@
 
   @media (min-width: @tablet-width) {
     line-height: 29px;
+  }
+
+  &--mail {
+    &:hover {
+      color: #283645;
+      text-decoration: underline;
     }
 
-    &--mail {
-      &:hover {
-        color: #283645;
-        text-decoration: underline;
-      }
-  
-      &:active {
-        color: rgba(40,54,69, 0.3);
-        text-decoration: none;
-      }
-    }    
+    &:active {
+      color: rgba(40, 54, 69, 0.3);
+      text-decoration: none;
+    }
   }
+}
 
-  .contact-us__list-mail-link {
-    text-decoration: none;    
-  }
+.contact-us__list-mail-link {
+  text-decoration: none;
+}
 
 .contact-us__list-item--block3 {
   @media (min-width: @desktop-width) {

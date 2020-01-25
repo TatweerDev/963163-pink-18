@@ -1,13 +1,13 @@
 .form-apps {
   position: relative;
-  padding: 37px 0 48px 0;  
+  padding: 37px 0 48px 0;
   background-color: #f2f2f2;
   order: 4;
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
     border: 2px solid #e5e5e5;
-    padding: 58px 0 60px 0;    
+    padding: 58px 0 60px 0;
     margin-bottom: 64px;
     order: 2;
   }
@@ -59,7 +59,6 @@
   @media (min-width: @tablet-width) {
     padding-left: 47px;
   }
-  
 }
 
 .form-apps__label:last-child {
@@ -68,24 +67,24 @@
 }
 
 .form__apps-radio {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 
-    &:checked ~ .form__apps-button::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 15px;
-      height: 15px;
-      background-color: #d22856;
-      z-index: 2;
-      border-radius: 50%;
-    }
+  &:checked ~ .form__apps-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #d22856;
+    z-index: 2;
+    border-radius: 50%;
+  }
 }
 
 .form__apps-button {

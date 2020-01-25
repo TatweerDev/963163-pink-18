@@ -13,4 +13,4 @@ menuToggle.addEventListener("click", function (evt) {
   menuToggle.classList.toggle("header__menu-toggle--opened");
   topMenu.classList.toggle("header__top-menu--opened");
   navMenu.classList.toggle("main-nav__list--opened");
-}); 
+});

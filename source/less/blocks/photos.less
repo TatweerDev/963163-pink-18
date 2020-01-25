@@ -12,7 +12,7 @@
   font-weight: 300;
   line-height: 30px;
   color: #283645;
-  padding: 0 40px 48px 40px;  
+  padding: 0 40px 48px 40px;
   text-align: center;
   margin: 0;
 
@@ -21,12 +21,12 @@
     font-size: 18px;
     line-height: 30px;
     padding: 0;
-    margin: 0 auto 75px auto;  
+    margin: 0 auto 75px auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 575px;
-    margin: 0px auto 88px auto;
+    margin: 0 auto 88px auto;
   }
 }
 
@@ -36,7 +36,6 @@
   width: 100%;
   height: auto;
 
-  
   &::before {
     position: absolute;
     content: "Панорама дня";
@@ -94,7 +93,7 @@
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 400px;
-  }  
+  }
 
   &--wide {
     height: 137px;
@@ -107,7 +106,6 @@
     @media (min-width: @desktop-width) {
       height: 506px;
     }
-
   }
 }
 
@@ -120,7 +118,7 @@
   padding-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
-  
+
   @media (min-width: @tablet-width) {
     max-height: 435px;
     width: 300px;
@@ -136,14 +134,14 @@
     width: 280px;
     margin: 0 auto 0 auto;
     overflow: hidden;
-    padding: 18px 0 20px 0;    
+    padding: 18px 0 20px 0;
 
     @media (min-width: @tablet-width) {
       width: 620px;
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
-      height: auto;    
+      height: auto;
       padding: 24px 0 12px 0;
     }
 
@@ -154,7 +152,7 @@
 }
 
 .photos__comment {
-  display: block;  
+  display: block;
   margin: 0 0 8px 18px;
   padding: 0;
 
@@ -168,11 +166,11 @@
   @media (min-width: @desktop-width) {
     height: 45px;
     overflow: hidden;
-    margin-bottom: 13px;   
+    margin-bottom: 13px;
   }
 }
 
-.photos__comment--top {  
+.photos__comment--top {
   order: 2;
   width: auto;
 
@@ -187,7 +185,7 @@
   font-size: 12px;
 }
 
-.photos__name {  
+.photos__name {
   padding-top: 18px;
   font-family: "OpenSansBold", "Arial", sans-serif;
 }
@@ -201,16 +199,16 @@
   }
 }
 
-.photos__like--top {  
+.photos__like--top {
   order: 3;
 
   @media (min-width: @tablet-width) {
     order: 1;
-    margin: 0px 62px 0 auto;
+    margin: 0 62px 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0px 64px 0 auto;
+    margin: 0 64px 0 auto;
   }
 }
 
@@ -220,7 +218,7 @@
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  
+
   &:checked + .photos__like-checkbox {
     background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='12.54' height='11.99' fill = '%23d22856' viewBox='521.94 473.06 12.54 11.99'%3E%3Cpath d='M528.17 485.06a.74.74 0 01-.55-.25 318.9 318.9 0 01-4.86-5.58 3.8 3.8 0 015.46-5.27 3.8 3.8 0 016.26 2.9c0 .91-.31 1.75-.9 2.38l-4.85 5.56a.73.73 0 01-.56.25zm-4.24-6.71c.2.25 2.47 2.84 4.24 4.86l4.33- 4.95c.34-.37.52-.86.52-1.4a2.33 2.33 0 00-2.33-2.33c-.73 0-1.43.35- 1.9.95a.76.76 0 01-.59.27.73.73 0 01-.58-.3 2.33 2.33 0 00-1.88-.92 2.33 2.33 0 00-1.83 3.8l.02.02z'/%3E%3C/svg%3E");
   }
@@ -243,6 +241,7 @@
   &--top {
     width: 13px;
     height: 13px;
+
     @media (min-width: @tablet-width) {
       top: 3px;
       left: 125px;
@@ -279,11 +278,11 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    padding: 23px 0 0 27px;   
+    padding: 23px 0 0 27px;
   }
 
   &--top {
-    padding: 0px 0 0 18px;
+    padding: 0 0 0 18px;
 
     @media (min-width: @tablet-width) {
       padding: 0 0 0 27px;

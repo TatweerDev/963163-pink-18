@@ -1,48 +1,48 @@
-.main-nav {  
+.main-nav {
   width: 100%;
   display: flex;
- 
-  @media (min-width: @desktop-width) {    
+
+  @media (min-width: @desktop-width) {
     justify-content: space-between;
     width: 960px;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-  }  
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;   
+  display: none;
 
   @media (min-width: @desktop-width) {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-left: 125px;  
-  }  
+    margin-left: 125px;
+  }
 }
 
 .main-nav__list--opened,
 .main-nav__list--nojs {
-  
+
   position: absolute;
   display: block;
   top: 70px;
   width: 100%;
   z-index: 2;
-  
+
   @media (min-width: @tablet-width) {
     top: 110px;
   }
-  
+
   @media (min-width: @desktop-width) {
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: 0;   
+    top: 0;
   }
 }
 
@@ -55,7 +55,7 @@
   @media (min-width: @desktop-width) {
     width: 172px;
     padding-top: 30px;
-  }  
+  }
 }
 
 .main-nav__list-item-link {
@@ -70,7 +70,6 @@
   line-height: 32px;
   letter-spacing: 1px;
   padding: 16px 25px 16px 15px;
-  padding: 16px 20px;
   box-shadow: 0 -1px 0 #040807, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: @tablet-width) {
@@ -82,20 +81,19 @@
     background-color: transparent;
     text-transform: inherit;
     letter-spacing: 1px;
-    padding: 15px;    
+    padding: 15px;
     line-height: 18px;
     font-family: "OpenSansLight", "Arial", sans-serif;
     box-shadow: none;
   }
 
-    &:hover {
-      color: #d22856;
-    }
+  &:hover {
+    color: #d22856;
+  }
 
-    &:active {
-      color: rgba(255,255,255, 0.3)
-      ;
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--active {
     position: relative;
@@ -113,12 +111,12 @@
       left: 32px;
     }
   }
-  
-  &--active-form {    
+
+  &--form {
     position: relative;
   }
 
-  &--active-form:after {
+  &--form::after {
     @media (min-width: @desktop-width) {
       position: absolute;
       content: "";
