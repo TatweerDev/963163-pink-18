@@ -110,9 +110,9 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
-  .pipe(posthtml({
+  .pipe(posthtml([
     include()
-  }))
+  ]))
   .pipe(gulp.dest("build"));
 });
 
