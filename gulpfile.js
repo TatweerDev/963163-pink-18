@@ -118,7 +118,7 @@ gulp.task("html", function() {
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",    
+    server: "build/",
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
