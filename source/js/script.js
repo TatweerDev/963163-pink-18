@@ -2,8 +2,8 @@ var menuToggle = document.querySelector(".header__menu-toggle");
 var topMenu = document.querySelector(".header__top-menu");
 var navMenu = document.querySelector(".main-nav__list");
 
-
 menuToggle.classList.remove("header__menu-toggle--nojs");
+menuToggle.classList.remove("header__top-menu--overlap");
 topMenu.classList.remove("header__top-menu--nojs");
 navMenu.classList.remove("main-nav__list--nojs");
 

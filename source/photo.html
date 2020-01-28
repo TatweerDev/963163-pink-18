@@ -12,48 +12,49 @@
     <script src="js/picturefill.js" async=""></script>
   </head>
   <body>
-    <header class="header">
-      <section class="header__photo-background">
-        <div class="header__top-menu">
-          <nav class="main-nav">
-            <a href="index.html" class="site-logo">
-              <svg class="site-logo__svg site-logo__svg--mobile site-logo__svg--header" width="75" height="41">
-                <use xlink:href="#logo-white-mobile"></use>
-              </svg>
-              <svg class="site-logo__svg site-logo__svg--tablet site-logo__svg--header" width="147" height="41">
-                <use xlink:href="#logo-white-tablet"></use>
-              </svg>
-              <svg class="site-logo__svg site-logo__svg--desktop site-logo__svg--header" width="147" height="41">
-                <use xlink:href="#logo-white-desktop"></use>
-              </svg>
-            </a>
-            <button class="header__menu-toggle" type="button">
-              <span class="visually-hidden">Menu opener</span>
-            </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__list-item">
-                <a href="index.html" class="main-nav__list-item-link">Главная</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a class="main-nav__list-item-link main-nav__list-item-link--active">Фотографии</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="form.html" class="main-nav__list-item-link">Конкурс</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="https://www.htmlacademy.ru" class="main-nav__list-item-link">HTML academy</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__slogan-wrapper container">
-          <h2 class="header__slogan header__slogan--photo">Фотографии пользователей</h2>
-        </div>
+    <header class="header">      
+      <section class="header__top-menu header__top-menu--overlap header__top-menu--nojs">
+        <h3 class="visually-hidden">Меню навигации</h3>
+        <nav class="main-nav">
+          <a href="index.html" class="site-logo">
+            <svg class="site-logo__svg site-logo__svg--mobile site-logo__svg--header" width="75" height="41">
+              <use xlink:href="#logo-white-mobile"></use>
+            </svg>
+            <svg class="site-logo__svg site-logo__svg--tablet site-logo__svg--header" width="147" height="41">
+              <use xlink:href="#logo-white-tablet"></use>
+            </svg>
+            <svg class="site-logo__svg site-logo__svg--desktop site-logo__svg--header" width="147" height="41">
+              <use xlink:href="#logo-white-desktop"></use>
+            </svg>
+          </a>
+          <button class="header__menu-toggle header__menu-toggle--nojs" type="button">
+            <span class="visually-hidden">Menu opener</span>
+          </button>
+          <ul class="main-nav__list main-nav__list--nojs">
+            <li class="main-nav__list-item">
+              <a href="index.html" class="main-nav__list-item-link">Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-item-link main-nav__list-item-link--active">Фотографии</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="form.html" class="main-nav__list-item-link">Конкурс</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="https://www.htmlacademy.ru" class="main-nav__list-item-link">HTML academy</a>
+            </li>
+          </ul>
+        </nav>
       </section>
+      <section class="header__photo-background">
+      <div class="header__slogan-wrapper container">
+        <h2 class="header__slogan header__slogan--photo">Фотографии пользователей</h2>
+      </div>
+    </section>
     </header>
     <main class="page-main">
       <section class="photos">
-        <h3 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хавтает ваших?
+        <h3 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </h3>
         <div class="photos__panorama-wrapper">
           <picture>
@@ -244,7 +245,7 @@
     </main>
     <footer class="page-footer page-footer--photo container">
       <div class="page-footer__logo-wrapper">
-        <a href="index.html" class="site-logo__footer">
+        <a href="index.html" class="site-logo site-logo--link-footer">
           <h2 class="visually-hidden">Pink</h2>
           <svg class="site-logo__svg site-logo__svg--footer-mobile site-logo__svg--footer" width="147" height="41">
             <use xlink:href="#logo-blue-mobile"></use>
@@ -284,6 +285,7 @@
         </a>
       </div>
     </footer>
+    </div>
     <script src="js/script.js"></script>
     <svg style="display:none">
       <symbol id="icon-crop" viewBox="0 0 48 48">

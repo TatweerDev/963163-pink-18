@@ -1,116 +1,7 @@
 .header {
+  position: relative;
   background-color: #1d2631;
   color: #ffffff;
-}
-
-.header__main-background {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  min-height: 465px;
-  background-size: 100% 465px;
-  overflow: hidden;
-
-  @media (min-resolution: @retina-dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-size: 100% 465px;
-  }
-
-  @media (min-width: @tablet-width) {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 49% 0;
-    height: 730px;
-
-    @media (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 49% 0;
-      background-size: 185% 730px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
-    height: 853px;
-
-    @media (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50% 10px;
-      background-size: 215% 853px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 257px;
-    height: 290px;
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-    bottom: -5px;
-    right: 68px;
-
-    @media (min-resolution: @retina-dppx) {
-      background: url("../img/iphone-hand-mobile@2x.png") no-repeat;
-      background-size: 100%;
-    }
-
-    @media (min-width: @tablet-width) {
-      background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
-      background-size: 100%;
-      width: 700px;
-      height: 100%;
-      top: 184px;
-      left: -21px;
-
-      @media (min-resolution: @retina-dppx) {
-        background: url("../img/iphone-hand-tablet@2x.png") no-repeat;
-        background-size: 100%;
-      }
-    }
-
-    @media (min-width: @desktop-width) {
-      background: url("../img/iphone-hand-desktop@1x.png") no-repeat 90% 100%;
-      width: 685px;
-      height: 700px;
-      top: 154px;
-      left: 474px;
-
-      @media (min-resolution: @retina-dppx) {
-        background: url("../img/iphone-hand-desktop@2x.png") no-repeat 90% 100%;
-        background-size: 153%;
-      }
-    }
-  }
-}
-
-.header__photo-background {
-  display: flex;
-  flex-direction: column;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  height: 237px;
-  background-size: 100% 460px;
-
-  @media (min-resolution: @retina-dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-size: cover;
-  }
-
-  @media (min-width: @tablet-width) {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
-    height: 440px;
-
-    @media (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% -1%;
-      background-size: 177%;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
-    height: 394px;
-
-    @media (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50% 0;
-      background-size: contain, cover;
-    }
-  }
 }
 
 .header__top-menu {
@@ -123,6 +14,20 @@
   @media (min-width: @tablet-width) {
     height: 110px;
   }
+
+  &--nojs {
+    margin-bottom: 251px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header__top-menu--overlap {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
 }
 
 .header__top-menu--opened,
@@ -242,6 +147,123 @@
   display: none;
 }
 
+.header__main-background {  
+  display: flex;
+  flex-direction: column;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  height: 733px;
+  background-size: 100% 462px;
+  overflow: hidden;
+
+  @media (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-size: 100% 462px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 49% 0;
+    height: 730px;
+
+    @media (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 49% 0;
+      background-size: 185% 730px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+    height: 853px;
+
+    @media (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50% 10px;
+      background-size: 215% 853px;
+    }
+  }
+}
+
+.header__content-wrapper--index {
+  position: relative;
+  height: 100%;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 257px;
+    height: 290px;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+    background-position: bottom;
+    bottom: 272px;
+    right: 68px;
+
+    @media (min-resolution: @retina-dppx) {
+      background: url("../img/iphone-hand-mobile@2x.png") no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+    }
+
+    @media (min-width: @tablet-width) {
+      background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+      width: 700px;
+      height: 100%;
+      bottom: 0px;
+      left: -33px;
+
+      @media (min-resolution: @retina-dppx) {
+        background: url("../img/iphone-hand-tablet@2x.png") no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat 90% 100%;
+      width: 685px;
+      height: 700px;      
+      left: 344px;
+
+      @media (min-resolution: @retina-dppx) {
+        background: url("../img/iphone-hand-desktop@2x.png") no-repeat 90% 100%;
+        background-size: 153%;
+      }
+    }
+  }
+}
+
+.header__photo-background {
+  display: flex;
+  flex-direction: column;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 2%;
+  height: 237px;
+  background-size: 100%;
+
+  @media (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 0 2%;
+    background-size: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+    height: 440px;
+
+    @media (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% -1%;
+      background-size: 185%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
+    height: 394px;
+
+    @media (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50% -3%;
+      background-size: 213%;
+    }
+  }
+}
+
 .header__slogan {
   display: block;
   font-family: "OpenSansLight", "Arial", sans-serif;
@@ -251,7 +273,7 @@
   font-weight: 300;
   width: 230px;
   line-height: 30px;
-  padding: 20px 0;
+  padding-top: 88px;
   margin: 0 auto 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -259,60 +281,52 @@
     line-height: 49px;
     text-align: center;
     width: 225px;
-    margin-top: 75px;
-    margin-left: 57px;
+    padding: 0;
+    margin: 203px auto 0 44px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 60px;
     width: 245px;
-    margin-top: 88px;
-    margin-left: 157px;
-  }
-
-  &--index {
-    position: relative;
-  }
+    margin-top: 217px;
+    margin-left: 28px;
+  } 
 
   &--photo {
     font-size: 24px;
     line-height: 30px;
     width: 235px;
     padding: 0;
-    margin: 23px auto 0 auto;
+    margin-top: 96px;
 
     @media (min-width: @tablet-width) {
       font-size: 50px;
       line-height: 60px;
       width: 360px;
       padding: 0;
-      margin: 70px auto 0 auto;
+      margin: 180px auto 0 auto;
     }
 
     @media (min-width: @desktop-width) {
-      margin: 64px auto 0 auto;
+      margin: 174px auto 0;
     }
   }
 
   &--form {
-    padding-top: 26px;
+    margin-top: 9px;
     line-height: 29px;
 
     @media (min-width: @tablet-width) {
       font-size: 50px;
       line-height: 60px;
       width: 485px;
-      margin: 44px auto 0 auto;
+      margin: 180px auto 0;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 37px;
+      margin-top: 173px;
       width: 755px;
     }
   }
-}
-
-.header__slogan-wrapper {
-  text-align: center;
 }
