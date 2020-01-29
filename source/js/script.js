@@ -21,7 +21,7 @@ menuToggle.addEventListener("click", function (evt) {
 });
 
 formSubmit.addEventListener("click", function (evt) {
-  evt.preventDefault();  
+  evt.preventDefault();
   if (form.checkValidity() === true) {
     modalSuccess.classList.add("modal-window--opened");
     modalFailure.classList.remove("modal-window--opened");
@@ -33,7 +33,7 @@ formSubmit.addEventListener("click", function (evt) {
 });
 
 modal.addEventListener("click", function (evt) {
-  var target = evt.target;  
+  var target = evt.target;
   if (target.classList.contains("modal__close")) {
     modal.classList.remove("modal--show");
   }
