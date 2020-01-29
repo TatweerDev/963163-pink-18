@@ -6,6 +6,7 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+    padding: 0;
   }
 }
 
@@ -20,18 +21,17 @@
 }
 
 .slider-toggles__button {
-  display: inline-block;
-  box-sizing: content-box;
+  display: block;
   cursor: pointer;
-  width: 6px;
+  padding: 0 3px;
   height: 6px;
   margin: 10px;
-  transform: translate(-50%, -50%);
+  border: none;
   background-color: rgba(190, 194, 199, 1);
   border-radius: 50%;
-}
 
-.slider-toggles__button--active {
-  background-color: #ffffff;
-  box-shadow: 0 0 0 3px #283645;
+  &--active {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px #283645;
+  }
 }
